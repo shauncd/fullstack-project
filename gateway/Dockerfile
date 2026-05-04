@@ -4,8 +4,6 @@ COPY nginx.conf /etc/nginx/
 
 COPY default.conf /etc/nginx/conf.d/
 
-WORKDIR /app
-
 COPY /data /usr/share/nginx/html/
 
 CMD ["nginx", "-g", "daemon off;"]
