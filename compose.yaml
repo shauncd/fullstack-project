@@ -1,0 +1,7 @@
+services:
+    gateway:
+        build: ./gateway
+        ports: 
+            - "80:80"
+    api:
+        build: ./api
